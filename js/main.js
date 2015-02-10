@@ -27,27 +27,29 @@ var redCurrent = {
 
 var barries = [blueberries, grapes, redCurrent];
 
-barries.forEach(function (item) {
-	document.write("<dl>");
+var writeberries = function(fruit) {
+	barries.forEach(function (item) {
+		document.write("<dl>");
 
-	document.write("<dt>Name:</dt>");
-	document.write("<dd>" + item.name + "</dd>");
+		document.write("<h2>" + item.name + "</h2>");
 
-	document.write("<dt>Veriety:</dt>");
-	document.write("<dd>" + item.veriety + "</dd>");
+		document.write("<dt>Veriety:</dt>");
+		document.write("<dd>" + item.veriety + "</dd>");
 
-	document.write("<dt>Age:</dt>");
-	document.write("<dd>" + item.growsOnShrub + "</dd>");
+		document.write("<dt>Age:</dt>");
+		document.write("<dd>" + item.growsOnShrub + "</dd>");
 
-	document.write("<dt>Grows On Shrub:</dt>");
-	document.write("<dd>" + item.energy + "</dd>");
+		document.write("<dt>Grows On Shrub:</dt>");
+		document.write("<dd>" + item.energy + "</dd>");
 
-	document.write("<dt>Carbohydrates:</dt>");
-	document.write("<dd>" + item.carbohydrates + "</dd>");
+		document.write("<dt>Carbohydrates:</dt>");
+		document.write("<dd>" + item.carbohydrates + "</dd>");
 
-	document.write("<dt>Protein:</dt>");
-	document.write("<dd>" + item.protein + "</dd>");
+		document.write("<dt>Protein:</dt>");
+		document.write("<dd>" + item.protein + "</dd>");
 
-	document.write("</dl>");
+		document.write("</dl>");
+	});
+};
 
-});
+writeberries ([blueberries, grapes,	redCurrent]);
