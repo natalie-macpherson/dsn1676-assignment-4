@@ -25,9 +25,7 @@ var redCurrent = {
 	protein: 1.4
 };
 
-var barries = [blueberries, grapes, redCurrent];
-
-var writeberries = function(fruit) {
+var writeberries = function(barries) {
 	barries.forEach(function (item) {
 		document.write("<dl>");
 
